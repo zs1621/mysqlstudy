@@ -29,7 +29,7 @@ UPDATE  `bcuser` SET  `nick_name` =  '周',
 `role` = NULL WHERE  `bcuser`.`id` =112 LIMIT 1
 ```
 
- - **drop table** 
+ - **drop table**(这个是直接删除这个表)
 
 ```
 DROP TABLE `table_name`;
@@ -64,5 +64,23 @@ GRANT [type of permission] ON [database name].[table name] TO 'username'@'localh
 GRANT ALL PRIVILEGES ON database_name.table_name TO 'username'@'localhost';
 ```
 
+ - **drop one column from  table**
 
+```
+ALTER TABLE  `user` DROP  `name` ;
+```
+
+
+ - **rename table name**
+
+```
+RENAME TABLE  `databasename`.`table_old_name` TO  `databasename`.`table_new_name` ;
+```
+
+
+ - **encode look**
+
+```
+SHOW VARIABLES WHERE Variable_name LIKE 'character\_set\_%' OR Variable_name LIKE 'collation%';
+```
 
