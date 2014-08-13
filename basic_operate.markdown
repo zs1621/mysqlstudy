@@ -22,9 +22,9 @@ DELETE FROM `table_name` WHERE `table.name`.`id` = 11
 - **update one column**
 
 ```
-UPDATE  `bcuser` SET  `nick_name` =  '周',
+UPDATE  `table_name` SET  `nick_name` =  '周',
 `password` =  '59a46b111fe459b58a170f4f0acdbd945c9fb1db5d71d6f1c38f3765c32a6225',
-`email` =  'zsa@11.com',
+`email` =  'zs1213yh@gmail.com',
 `phone` =  '13681714904',
 `role` = NULL WHERE  `bcuser`.`id` =112 LIMIT 1
 ```
@@ -67,7 +67,7 @@ GRANT ALL PRIVILEGES ON database_name.table_name TO 'username'@'localhost';
  - **drop one column from  table**
 
 ```
-ALTER TABLE  `user` DROP  `name` ;
+ALTER TABLE  `table_name` DROP  `column_name` ;
 ```
 
 
@@ -82,5 +82,11 @@ RENAME TABLE  `databasename`.`table_old_name` TO  `databasename`.`table_new_name
 
 ```
 SHOW VARIABLES WHERE Variable_name LIKE 'character\_set\_%' OR Variable_name LIKE 'collation%';
+```
+
+ - **clean up data from table**
+
+```
+TRUNCATE TABLE `table_name`
 ```
 
