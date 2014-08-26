@@ -90,3 +90,8 @@ SHOW VARIABLES WHERE Variable_name LIKE 'character\_set\_%' OR Variable_name LIK
 TRUNCATE TABLE `table_name`
 ```
 
+ - **change one column name**
+
+```
+ALTER TABLE `table_name` change oldname newname varchar(10)...
+```
