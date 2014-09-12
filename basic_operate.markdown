@@ -1,5 +1,12 @@
 
 
+- **create database**
+
+```
+CREATE DATABASE database_name;
+```
+
+
 - **delete primary key**
 
 
@@ -95,3 +102,13 @@ TRUNCATE TABLE `table_name`
 ```
 ALTER TABLE `table_name` change oldname newname varchar(10)...
 ```
+
+ - ****
+  - USER() reports how you attempted to authenticate in MySQL
+  - CURRENT_USER() reports how you were allowed to authenticate in MySQL
+
+```
+SELECT USER(),CURRENT_USER();
+```
+
+
