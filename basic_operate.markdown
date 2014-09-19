@@ -103,7 +103,7 @@ TRUNCATE TABLE `table_name`
 ALTER TABLE `table_name` change oldname newname varchar(10)...
 ```
 
- - ****
+ - **显示用户**
   - USER() reports how you attempted to authenticate in MySQL
   - CURRENT_USER() reports how you were allowed to authenticate in MySQL
 
@@ -112,3 +112,15 @@ SELECT USER(),CURRENT_USER();
 ```
 
 
+ - **查看二进制log**
+  - 进入log文件目录
+
+```
+mysqlbinlog mysql-bin.000001 
+```
+
+ - **添加一列(add one column)**
+
+```
+alter table table_name add column new_column_name int NOT NULL DEFAULT 0;
+```
