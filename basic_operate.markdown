@@ -124,3 +124,9 @@ mysqlbinlog mysql-bin.000001
 ```
 alter table table_name add column new_column_name int NOT NULL DEFAULT 0;
 ```
+
+ - **mysql export to .xls**
+
+```
+ mysql your_database  -uroot  -p  -e  "select   *   from   test.table2"   >   /home/test.xls
+```
