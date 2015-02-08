@@ -141,4 +141,15 @@ echo "create database databasename" | mysql -u username -p
 
 
 
+ - **delete foreign key**
 
+```
+ALTER TABLE table_name DROP FOREIGN KEY key_name;
+SHOW CREATE TABLE table_name;  #这个可以看key_name, 就是 CONSTRAINT 后面的
+```
+
+ - **show index**
+
+```
+show index from dd_permission;
+```
