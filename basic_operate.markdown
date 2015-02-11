@@ -153,3 +153,8 @@ SHOW CREATE TABLE table_name;  #这个可以看key_name, 就是 CONSTRAINT 后�
 ```
 show index from dd_permission;
 ```
+ - **mysql select into use**
+
+```
+ Create table new_table_name (Select * from old_table_name);
+```
