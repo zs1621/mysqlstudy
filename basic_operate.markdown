@@ -159,3 +159,9 @@ show index from dd_permission;
 ```
 RENAME TABLE old_table_name To new_table_name
 ```
+
+ - **mysql select into use**
+
+```
+ Create table new_table_name (Select * from old_table_name);
+```
