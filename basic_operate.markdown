@@ -165,3 +165,34 @@ RENAME TABLE old_table_name To new_table_name
 ```
  Create table new_table_name (Select * from old_table_name);
 ```
+
+
+ - **删除索引**
+
+```
+ DROP INDEX index_name ON table_name
+```
+
+ - **添加索引**
+
+```
+##多个列唯一unqiue index
+ALTER TABLE `votes` ADD UNIQUE `unique_index_name` (`user`, `email`, `address`);
+ALTER TABLE tbl_name ADD INDEX index_name (column_list);
+ALTER TABLE tbl_name ADD FULLTEXT index_name (column_list);
+ALTER TABLE tbl_name ADD PRIMARY KEY (column_list);
+```
+
+ - **创建table添加unique key**
+
+```
+CREATE TABLE `content_html` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_box_elements` int(11) DEFAULT NULL,
+  `id_router` int(11) DEFAULT NULL,
+  `content` mediumtext COLLATE utf8_czech_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_box_elements` (`id_box_elements`,`id_router`)
+);
+```
+
